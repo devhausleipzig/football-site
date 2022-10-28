@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* Shared */
+
+:root {
+  --orange: #df6632;
+  --dark-orange: #853817;
+  --grey: #787878;
+  --offWhite: #fcfcfc;
+  --cardShadow: 0px 6px 32px rgba(0, 0, 0, 0.25);
+  font-family: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+}
+
+main {
+  padding-inline: 2.5rem;
+  padding-top: 3.75rem;
+  padding-bottom: 6rem;
+}
+
+/* Header */
+
+header {
+  height: 6.25rem;
+  background-color: var(--orange);
+  padding-inline: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 3.75rem;
+  background-color: var(--dark-orange);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+
+nav {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.link {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Featured */
+
+.featured-article {
+  display: flex;
+  gap: 2.75rem;
+  margin-bottom: 2rem;
+}
+
+.featured-img {
+  width: 37.5rem;
+  height: 22.5rem;
+}
+
+.featured-heading {
+  font-size: 2.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.featured-paragraph {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.statistics {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.statistics-numbers {
+  color: var(--grey);
+  display: flex;
+  gap: 1.5rem;
+}
+
+.share {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.share-link,
+.share-icon {
+  color: var(--orange);
+}
+
+.share-icon {
+  height: 1rem;
+}
+
+.read-button {
+  background-color: var(--orange);
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  padding-inline: 4.75rem;
+  padding-block: 1rem;
+  border-radius: 0.75rem;
+  display: inline-block;
+}
+
+.card-container {
+  display: flex;
+  gap: 6.25rem;
+}
+
+.card {
+  background-color: var(--offWhite);
+  box-shadow: var(--cardShadow);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-heading {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+#first-img {
+  object-position: center;
+}
+
+.card-img {
+  margin-bottom: 1rem;
+  height: 10rem;
+  object-fit: cover;
+  object-position: top;
+}
+
+.card-paragraph {
+  margin-bottom: 0.5rem;
+}
+
+.card-button-wrapper {
+  display: flex;
+  justify-content: end;
+}
+
+.card-button {
+  padding-block: 0.5rem;
+  padding-inline: 4rem;
+  background-color: var(--orange);
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
